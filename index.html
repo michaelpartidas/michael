@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Michael Partidas | IT Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-brand"><a href="#home">Michael's Portfolio</a></div>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contacts">Contacts</a></li>
+    </ul>
+    <button class="theme-btn" id="themeToggleBtn" aria-label="Light/Dark mode">🌙</button>
+  </nav>
+
+  <section id="home">
+    <div class="hero-inner">
+      <div class="hero-img-box"><img src="assets/home.jpeg" alt="Michael Partidas"></div>
+      <div class="hero-text">
+        <h1><span>My</span><span>Portfolio</span></h1>
+        <p>Welcome to my portfolio! I am Michael G. Partidas, a 2nd-year Information Technology student who is passionate about learning new skills and improving in the field of technology. This website showcases my projects, creativity, and the progress I am making as a future IT professional.</p>
+        <div class="hero-buttons">
+          <button class="btn-explore" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Explore</button>
+          <button class="btn-touch" onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth'})">Get in Touch</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-inner">
+      <div class="section-header"><h2>About me</h2><div class="divider"></div></div>
+      <div class="about-body">
+        <div class="about-img-box"><img src="assets/about.jpeg" alt="Michael"></div>
+        <div class="about-text">
+          <p>Hello! I am Michael G. Partidas a 2nd-year Information Technology student who is passionate about learning and improving my skills in the field of technology. I am very interested in web design, digital tools, and computer-related projects because they allow me to be creative while also solving problems. As a student, I always try to give my best effort in every task and continue learning new things that can help me grow in the IT industry.</p>
+          <p>I consider myself a hardworking and motivated person who is willing to improve step by step. I enjoy working on projects that challenge my skills and help me gain more experience. I also value friendship and teamwork because I believe that learning with others helps me become more confident and responsible.</p>
+          <p>This portfolio represents my progress as an IT student and the skills that I am developing along the way. My goal is to continue learning, gaining experience, and becoming a professional who can contribute positively in the future. I am always open to new opportunities that will help me improve both personally and academically.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="skills-inner">
+      <div class="section-header"><h2>My Skills</h2><div class="divider"></div></div>
+      <div class="skills-grid">
+        <div class="skill-card"><h3>Web Design</h3><p>I can create simple and clean website designs using HTML and CSS. I focus on making designs that are easy to use, modern, and visually appealing.</p></div>
+        <div class="skill-card"><h3>Basic Programming</h3><p>I have basic knowledge of programming and enjoy learning how to solve problems using code. I am continuously improving my skills through school projects and practice.</p></div>
+        <div class="skill-card"><h3>UI / UX Design</h3><p>I can design simple user interfaces using tools like Figma. I like creating layouts that are organized, attractive, and easy for users to understand.</p></div>
+        <div class="skill-card"><h3>Computer Skills</h3><p>I am familiar with basic computer applications and digital tools that are useful for school and technical projects. I am also confident in using different software and learning new ones quickly.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="projects-inner">
+      <div class="section-header"><h2>Projects</h2><div class="divider"></div></div>
+      <div class="projects-grid">
+        <div class="project-card"><div class="project-img-box"><img src="assets/landscape.jpg" alt="web design"></div><h3>Web Designing</h3><p>This is one of my previous projects — designing a website for landscaping and lawn care services.</p></div>
+        <div class="project-card"><div class="project-img-box"><img src="assets/code.jpg" alt="game dev"></div><h3>Game Development</h3><p>Making a simple game for a company and making it functional and free to play.</p></div>
+        <div class="project-card"><div class="project-img-box"><img src="assets/hardworking.jpeg" alt="troubleshooting"></div><h3>Troubleshooting a Computer</h3><p>This is one of my past projects — computer servicing and troubleshooting computers.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts">
+    <div class="contacts-inner">
+      <div class="section-header"><h2>Contacts</h2><div class="divider"></div></div>
+      <div class="contact-box">
+        <p><a href="mailto:michaelpartidas60@gmail.com">Email: michaelpartidas60@gmail.com</a></p>
+        <p><a href="https://www.google.com/maps/dir//DepEd+Mis+Or+Taboc+Opol,+GH7H%2BW3P,+Opol,+Misamis+Oriental/@8.5262336,124.5642752,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x32fff500140bb05b:0xf5305b694c29389c!2m2!1d124.5776972!2d8.5148342?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D">Address: Taboc, Opol, Mis Or</a></p>
+        <p>Number: 09562301614</p>
+      </div>
+      
+      <!-- NEW: Send a message form -->
+      <div class="contact-form-container">
+        <div class="form-title">📬 Send me a message</div>
+        <form id="messageForm">
+          <div class="form-group"><label for="senderName">Full name *</label><input type="text" id="senderName" placeholder="Your name" required></div>
+          <div class="form-group"><label for="senderEmail">Email address *</label><input type="email" id="senderEmail" placeholder="you@example.com" required></div>
+          <div class="form-group"><label for="messageText">Message *</label><textarea id="messageText" placeholder="Write your message here..." required></textarea></div>
+          <button type="submit" class="send-btn">Send message</button>
+        </form>
+        <div id="formFeedback"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>&copy; 2025 Michael G. Partidas — All rights reserved.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
